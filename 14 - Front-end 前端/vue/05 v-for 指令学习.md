@@ -16,6 +16,7 @@
             {name: 'Leo',age: 23,gender: 'man'},
             {name: 'cindy',age: 21,gender: 'woman'}
            ]
+        }
         methods: {}     
     })
 </script>
@@ -50,8 +51,8 @@
            students: [
             {name: 'tony',id: 1,gender: 'man'},
             {name: 'Leo',id: 2,gender: 'man'},
-            {name: 'cindy',id: 3,gender: 'woman'}
-           ]
+            {name: 'cindy',id: 3,gender: 'woman'}   
+        }
         methods: {}     
     })
 </script>

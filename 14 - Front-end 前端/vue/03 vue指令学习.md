@@ -12,6 +12,9 @@
   
   v-model 实现数据的双向绑定
   
+  v-if 判断是否创建或者删除元素
+  
+  v-show 判断是否显示或者隐藏元素
   
 ###
  ```html
@@ -35,6 +38,12 @@
      
      <!-- v-model 用于实现数据的双向绑定 -->
      <input type="text" v-model="msg"/>
+     
+     <!-- v-if 用于是否创建或者删除元素 -->
+     <input type="text" v-if="isExist"/>
+     
+     <!-- v-show 用于是否显示或者隐藏元素 -->
+     <input type="text" v-show="isShow"/>
  </div>
  <script>
      // 创建Vue实例
@@ -42,7 +51,9 @@
          el: '#app', // 表示要操作的页面元素
          data: {     // 存放元素中用到的数据
              msg: 'Vue.js',
-             msgs: '<h1>Vue.js</h1>'
+             msgs: '<h1>Vue.js</h1>',
+             isExist: true,
+             isShow: false
          },
          methods:{
              sayHello: function(){
