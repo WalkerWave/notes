@@ -22,7 +22,8 @@
     }
 </style>
 <div id="app">
-    <transition>
+    <!-- mode 属性用于设置动画切换模式 -->
+    <transition mode="out-in">
         <p>{{msg}}</p>
     </transition>
 </div>
@@ -32,7 +33,7 @@
         el: '#app',
         data: {
             msg: 'vue.js'
-        }
+        },
         methods: {}
     })
 </script>
@@ -64,7 +65,7 @@
         el: '#app',
         data: {
             msg: 'vue.js'
-        }
+        },
         methods: {}
     })
 </script>
@@ -85,7 +86,7 @@
         el: '#app',
         data: {
             msg: 'vue.js'
-        }
+        },
         methods: {}
     })
 </script>
@@ -107,7 +108,7 @@
         el: '#app',
         data: {
             msg: 'vue.js'
-        }
+        },
         methods: {
             beforeEnter(el) {
                 //设置style
@@ -164,7 +165,7 @@
                 {name: 'Leo',id: 2,gender: 'man'},
                 {name: 'cindy',id: 3,gender: 'woman'} 
              ]
-        }
+        },
         methods: {
             delete(i) {
                 this.students.splice(i,1);

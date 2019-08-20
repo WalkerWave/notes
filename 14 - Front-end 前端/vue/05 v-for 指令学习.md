@@ -31,7 +31,12 @@
     var vm = new Vue({
         el: '#app',
         data: {
-           tony: {name: 'tony',age: 21,gender: 'man'}
+            tony: {
+                name: 'tony'        
+                age: 21,
+                gender: 'man'
+            }
+        },
         methods: {}     
     })
 </script>
@@ -49,10 +54,11 @@
         el: '#app',
         data: {
            students: [
-            {name: 'tony',id: 1,gender: 'man'},
-            {name: 'Leo',id: 2,gender: 'man'},
-            {name: 'cindy',id: 3,gender: 'woman'}   
-        }
+                {name: 'tony',id: 1,gender: 'man'},
+                {name: 'Leo',id: 2,gender: 'man'},
+                {name: 'cindy',id: 3,gender: 'woman'} 
+            ]
+        },
         methods: {}     
     })
 </script>

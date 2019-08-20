@@ -17,7 +17,7 @@
         el: '#app',
         data: {
             msg: 'vue.js'
-        }
+        },
         methods: {}     
     })
 </script>
@@ -48,7 +48,7 @@
         el: '#app',
         data: {
             date: new Date()
-        }
+        },
         methods: {},
         filters: { // 定义局部过滤器 
             dateFormat: function(dateStr) {
@@ -77,7 +77,7 @@
 
     var vm = new Vue({
         el: '#app',
-        data: {}
+        data: {},
         methods: {
             sayHello(){
                 console.log('hello')
