@@ -1,4 +1,4 @@
-### vue-resource发起get、psot、jsonp请求
+## vue-resource发起get、psot、jsonp请求
 ```javascript
       // GET /someUrl?foo=bar
       this.$http.get('/someUrl', {params: {foo: 'bar'}}).then(response => {
@@ -34,7 +34,7 @@
       });
 ```
 
-###  Axios发起get、post请求
+##  Axios发起get、post请求
 
 ```javascript
     // 一、执行 GET 请求

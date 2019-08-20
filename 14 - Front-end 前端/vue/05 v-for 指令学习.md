@@ -1,4 +1,4 @@
-### v-for 指令学习
+## v-for 指令学习
 
 1、遍历数组
 ```html
@@ -46,7 +46,7 @@
 ```html
 <div id="app">
     <p v-for="(item,i) in students" :key="item.id">
-        <input type="checkbox"/>{{item.name}}} 
+        <input type="checkbox"/>{{item.name}} 
     </p>
 </div>
 <script>

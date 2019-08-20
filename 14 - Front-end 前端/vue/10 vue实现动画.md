@@ -1,4 +1,4 @@
-### vue实现动画
+## vue实现动画
 
 + 过度类名实现动画
 
@@ -28,7 +28,6 @@
     </transition>
 </div>
 <script>
-
     var vm = new Vue({
         el: '#app',
         data: {
@@ -60,7 +59,6 @@
     </transition>
 </div>
 <script>
-
     var vm = new Vue({
         el: '#app',
         data: {
@@ -81,7 +79,6 @@
     </transition>
 </div>
 <script>
-
     var vm = new Vue({
         el: '#app',
         data: {
@@ -103,7 +100,6 @@
     </transition>
 </div>
 <script>
-
     var vm = new Vue({
         el: '#app',
         data: {
@@ -150,13 +146,12 @@
 </style>
 <div id="app">
     <!-- appear 页面初始渲染时使用动画 -->
-    <!-- tag 指定transition-group为指定元素，默认为span -->
+    <!-- tag 指定transition-group渲染为指定元素，默认为span -->
     <transition-group appear tag="div"> 
         <p v-for="(item,i) in students" :key="item.id" @click="delete(i)">{{item.name}}</p>
     </transition-group>
 </div>
 <script>
-
     var vm = new Vue({
         el: '#app',
         data: {
