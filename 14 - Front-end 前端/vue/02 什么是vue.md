@@ -6,10 +6,10 @@ MVC 是后端的分层开发概念，即Model（模型）,View（视图）,Contr
 
 MVVM 前端视图层的概念，主要关注视图层分离，即Model（数据）,View（HTML结构）,VM ViewModel（数据双向绑定）。
 
-+ app.js 
++ app.js
 
 入口模块
-    
+
 + router.js
 
 路由分发处理模块
@@ -28,9 +28,3 @@ MVVM 前端视图层的概念，主要关注视图层分离，即Model（数据�
     })
 </script>
 ```
-
-
-
-
-
-

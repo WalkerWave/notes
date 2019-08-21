@@ -6,6 +6,7 @@
 
    + 模块化：是从代码逻辑角度进行划分的，方便代码分层开发，保证每个功能模块只能单一；
    + 组件化：是从UI界面的角度进行划分的，方便页面进行重用；
+
 #### 定义全局组件
 ```html
 <div id="app">
@@ -26,17 +27,17 @@
     })
     // 使用Vue.component('组件名称','组件模板名称')注册组件
     Vue.component('myCom1',com);  
-    
+
     // 也可简写为如下
     Vue.component('myCom1',Vue.extend({
         template: '<h3>Vue创建全局Vue组件</h3>'
     }));  
-    
+
     // 2、myCom2
     Vue.component('myCom2',{
         template: '<h3>Vue创建全局Vue组件</h3>'
-    }); 
-    
+    });
+
     // 3、myCom3
     Vue.component('myCom3',{
         template: '#temp',
@@ -46,10 +47,10 @@
             }
         },
         methods: {
-            
+
         }
     })
-     
+
     var vm = new Vue({
         el: '#app',
         data: {},
@@ -63,7 +64,7 @@
 <div id="app">
     <my-com1></my-com1>
     <my-com2></my-com2>
-    <!-- component 用于展示对应名称组件，一般用于多组件切换 --> 
+    <!-- component 用于展示对应名称组件，一般用于多组件切换 -->
     <component :is="'myCom1'"></component>
 </div>
 
@@ -88,4 +89,3 @@
 ```
 
 + 组件template模板只能有且仅有唯一的根元素
-
