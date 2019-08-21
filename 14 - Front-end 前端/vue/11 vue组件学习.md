@@ -14,11 +14,9 @@
     <my-com2></my-com2>
     <my-com3></my-com3>
 </div>
-
 <template id="temp">
     <h3>Vue创建全局{{msg}}组件</h3>
 </template>
-
 <script>
     // 1、myCom1
     // 使用Vue.extend创建全局Vue组件模板
@@ -46,9 +44,7 @@
                 msg:'Vue'
             }
         },
-        methods: {
-
-        }
+        methods: {}
     })
 
     var vm = new Vue({

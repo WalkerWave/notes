@@ -14,19 +14,19 @@
 ```
 1、数组
 ```html
-    <h3 :class="['red','thin']">Hello vue.js !!! </h3>
+<h3 :class="['red','thin']">Hello vue.js !!! </h3>
 ```
 
 2、数组中使用三元表达式
 ```html
 <div id="app">
-    <h3 :class="['red', isTHin ? 'thin' : '']">Hello vue.js !!! </h3>
+    <h3 :class="['red', isThin ? 'thin' : '']">Hello vue.js !!! </h3>
 </div>
 <script>
     var vm = new Vue({
         el: '#app',
         data: {
-            isTHin: true
+            isThin: true
         },
         methods: {}     
     })
@@ -102,7 +102,3 @@
     })
 </script>
 ```
-
-
-
-
