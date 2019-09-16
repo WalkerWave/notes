@@ -24,20 +24,20 @@
         template: '<h3>Vue创建全局Vue组件</h3>'
     })
     // 使用Vue.component('组件名称','组件模板名称')注册组件
-    Vue.component('myCom1',com);  
+    Vue.component('MyCom1',com);  
 
     // 也可简写为如下
-    Vue.component('myCom1',Vue.extend({
+    Vue.component('MyCom1',Vue.extend({
         template: '<h3>Vue创建全局Vue组件</h3>'
     }));  
 
     // 2、myCom2
-    Vue.component('myCom2',{
+    Vue.component('MyCom2',{
         template: '<h3>Vue创建全局Vue组件</h3>'
     });
 
     // 3、myCom3
-    Vue.component('myCom3',{
+    Vue.component('MyCom3',{
         template: '#temp',
         date(){
             return {
@@ -61,7 +61,7 @@
     <my-com1></my-com1>
     <my-com2></my-com2>
     <!-- component 用于展示对应名称组件，一般用于多组件切换 -->
-    <component :is="'myCom1'"></component>
+    <component :is="'MyCom1'"></component>
 </div>
 
 <template id="temps">
@@ -101,7 +101,7 @@
         },
         methods: {},
         components:{  
-            myCom: {
+            MyCom: {
                 props:['parentMsg'],
                 template:'#temps',
                 data(){
@@ -136,7 +136,7 @@
         }
     },
     components:{  
-        myCom: {
+        MyCom: {
             props:['parentMsg'],
             template:'#temps',
             data(){

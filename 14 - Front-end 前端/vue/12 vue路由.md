@@ -8,17 +8,13 @@ vue-router 是 Vue.js 官方的路由管理器，它和 Vue.js 的核心深度�
     <router-link to="/register">注册</router-link>
     <router-view></router-view>
 </div>
-<template id="login"></template>
-<template id="register"></template>
 <script>
-
 var login = {
     template:'#login'
 }
 var register = {
     template:'#register'
 }
-
 var routerObj = new VueRouter({
     routers:[
         {path:'/',redirect:'/login'},
@@ -32,7 +28,6 @@ var routerObj = new VueRouter({
         }
     ]
 })
-
 var vm = new Vue({
     el:"#app",
     data:{},
